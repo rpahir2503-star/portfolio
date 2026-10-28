@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rohit Ahir | Computer Science & Engineering Portfolio</title>
+  <meta name="description" content="Personal Portfolio of Rohit Ahir, 2nd-year B.Tech CSE Core student at JECRC University, showcasing coursework projects in Python, web development, and AI tools.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230d9488'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-family='Arial,sans-serif' font-size='26' font-weight='700' fill='white'%3ERA%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;600;700;800&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header & Navigation -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="#home">
+        <span class="logo-mark">RA</span>
+        <span class="logo-text">Rohit Ahir</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <a href="#chat" class="nav-chat-pill">&#9889; AI Chat</a>
+      </nav>
+
+      <div class="header-actions">
+        <button id="theme-toggle" type="button" aria-label="Toggle light and dark mode">
+          <span class="theme-icon" id="theme-icon">&#9789;</span>
+          <span class="theme-text" id="theme-text">Dark</span>
+        </button>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" type="button" aria-label="Open navigation menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="home">
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="status-dot"></span> 2nd Year B.Tech CSE &bull; JECRC University
+        </div>
+        <h1 class="hero-title">
+          Hi, I'm <span class="highlight">Rohit Ahir</span>.<br>
+          Computer Science Engineering Student.
+        </h1>
+        <p class="hero-description">
+          I am a 2nd-year Computer Science Engineering student at JECRC University interested in software development, web development, Python, AI/ML, and building practical projects.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">Explore Projects</a>
+          <a class="btn btn-secondary" href="#chat">Ask AI Assistant</a>
+          <a class="btn btn-outline" href="https://github.com/rpahir2503-star" target="_blank" rel="noopener">GitHub Profile</a>
+        </div>
+      </div>
+      <div class="hero-avatar-wrapper">
+        <div class="avatar-card">
+          <img src="https://ui-avatars.com/api/?name=Rohit+Ahir&background=0d9488&color=fff&size=256&bold=true" alt="Rohit Ahir profile portrait" class="profile-photo">
+          <div class="avatar-info">
+            <span class="avatar-name">Rohit Ahir</span>
+            <span class="avatar-dept">CSE Core &bull; Class of 2029</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Live Weather (Open-Meteo API) -->
+    <section class="weather-strip" id="weather" aria-labelledby="weather-heading">
+      <article class="weather-card">
+        <div class="weather-card-head">
+          <span class="section-sub">Live Conditions</span>
+          <h2 class="weather-heading" id="weather-heading">Weather Updates</h2>
+          <p class="weather-source">Powered by the <a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo</a> forecast API</p>
+        </div>
+        <div class="weather-body" id="weatherBody" aria-live="polite">
+          <p class="weather-status">Fetching live weather…</p>
+        </div>
+      </article>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="section-block">
+      <div class="section-header">
+        <span class="section-sub">Get To Know Me</span>
+        <h2 class="section-title">About Me</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-bio">
+          <p>
+            I am a 2nd-year Computer Science Engineering student at JECRC University. I am interested in software development, web development, Python, AI/ML, and building practical projects. I am currently improving my programming and development skills by working on different projects and learning new technologies.
+          </p>
+          <div class="education-card">
+            <div class="edu-icon">&#127891;</div>
+            <div class="edu-details">
+              <h3>B.Tech — Computer Science and Engineering (CSE Core)</h3>
+              <p class="edu-meta">JECRC University &bull; 2nd Year</p>
+              <p class="edu-notes">Expected Graduation: 2029</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-highlights">
+          <div class="highlight-box">
+            <span class="highlight-num">JECRC</span>
+            <span class="highlight-text">University, Jaipur</span>
+          </div>
+          <div class="highlight-box">
+            <span class="highlight-num">2nd Year</span>
+            <span class="highlight-text">B.Tech CSE Core</span>
+          </div>
+          <div class="highlight-box">
+            <span class="highlight-num">2029</span>
+            <span class="highlight-text">Expected Graduation</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section-block">
+      <div class="section-header">
+        <span class="section-sub">Technical Competencies</span>
+        <h2 class="section-title">Technical Skills</h2>
+        <p class="section-desc">Technologies and tools I have learned and applied in my coursework and projects.</p>
+      </div>
+      <div class="skills-categories">
+        <div class="skill-category-card">
+          <div class="cat-header">
+            <span class="cat-icon">&#128187;</span>
+            <h3>Programming Languages</h3>
+          </div>
+          <ul class="skills-tag-list">
+            <li><span>Python</span></li>
+            <li><span>C</span></li>
+            <li><span>C++</span></li>
+            <li><span>JavaScript</span></li>
+          </ul>
+        </div>
+
+        <div class="skill-category-card">
+          <div class="cat-header">
+            <span class="cat-icon">&#127760;</span>
+            <h3>Web Development</h3>
+          </div>
+          <ul class="skills-tag-list">
+            <li><span>HTML</span></li>
+            <li><span>CSS</span></li>
+            <li><span>JavaScript</span></li>
+            <li><span>Web Development</span></li>
+          </ul>
+        </div>
+
+        <div class="skill-category-card">
+          <div class="cat-header">
+            <span class="cat-icon">&#128295;</span>
+            <h3>Tools &amp; Workflow</h3>
+          </div>
+          <ul class="skills-tag-list">
+            <li><span>Git</span></li>
+            <li><span>GitHub</span></li>
+            <li><span>AI Tools</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section-block">
+      <div class="section-header">
+        <span class="section-sub">Featured Work</span>
+        <h2 class="section-title">Projects</h2>
+        <p class="section-desc">
+          Featured projects and web applications I have built and developed.
+        </p>
+      </div>
+
+      <!-- Search & Filter Bar -->
+      <div class="project-filter-bar">
+        <div class="search-field">
+          <span class="search-icon">&#128269;</span>
+          <input type="text" id="projectSearch" placeholder="Search by project name or technology (e.g. Quiz, Book, Python, Cursor, AI)..." aria-label="Search projects">
+          <button id="clearSearch" type="button" aria-label="Clear search" style="display: none;">&times;</button>
+        </div>
+        <div class="filter-pills" role="tablist">
+          <button type="button" class="pill-btn active" data-category="all">All (8)</button>
+          <button type="button" class="pill-btn" data-category="python">Python</button>
+          <button type="button" class="pill-btn" data-category="web">Web Development</button>
+          <button type="button" class="pill-btn" data-category="ai">AI Tools</button>
+        </div>
+      </div>
+
+      <div class="filter-status-info">
+        <span id="projectsCount">Showing 8 of 8 projects</span>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="projects-grid" id="projectsContainer">
+        <!-- Project 1: Interactive Quiz Application -->
+        <article class="project-card" data-tags="html css javascript web development quiz ai lecture10 interactive testing" data-category="web ai">
+          <div class="card-top">
+            <span class="project-num">01</span>
+            <span class="project-badge">Lecture 10 &bull; Web App</span>
+          </div>
+          <h3 class="project-name">Interactive Quiz Application</h3>
+          <p class="project-summary">
+            Responsive CS &amp; AI quiz web application featuring dynamic question rendering, instant visual feedback with color coding, score tracking, and restart capability.
+          </p>
+          <div class="project-tech-tags">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Web Development</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/rpahir2503-star/INTERACTIVE-QUIZ-APPLICATION" target="_blank" rel="noopener" class="btn-card primary">
+              <span class="btn-icon">&#128279;</span> GitHub
+            </a>
+            <a href="https://quiz-rohit-5529.vercel.app" target="_blank" rel="noopener" class="btn-card live-btn">
+              <span class="btn-icon">&#128065;</span> Live Demo
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 2: Book Reading List Application -->
+        <article class="project-card" data-tags="html css javascript web development book reading list localstorage lecture11 crud tracker" data-category="web">
+          <div class="card-top">
+            <span class="project-num">02</span>
+            <span class="project-badge">Lecture 11 &bull; Web App</span>
+          </div>
+          <h3 class="project-name">Book Reading List Application</h3>
+          <p class="project-summary">
+            Reading tracker web application featuring full CRUD book management, reading lifecycle statuses (Want to Read, Currently Reading, Completed), live search, and LocalStorage persistence.
+          </p>
+          <div class="project-tech-tags">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">LocalStorage</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/rpahir2503-star/Book-Reading-list-application" target="_blank" rel="noopener" class="btn-card primary">
+              <span class="btn-icon">&#128279;</span> GitHub
+            </a>
+            <a href="https://booknest-six-pearl.vercel.app" target="_blank" rel="noopener" class="btn-card live-btn">
+              <span class="btn-icon">&#128065;</span> Live Demo
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 3: Bug Fixing Using Cursor AI -->
+        <article class="project-card" data-tags="c python cursor ai prompt engineering debugging refactoring case study memory buffer overflow" data-category="ai python">
+          <div class="card-top">
+            <span class="project-num">03</span>
+            <span class="project-badge">Case Study &bull; AI Debugging</span>
+          </div>
+          <h3 class="project-name">Bug Fixing Using Cursor AI</h3>
+          <p class="project-summary">
+            Practical software engineering case study identifying and fixing 3 runtime bugs (uninitialized variable, off-by-one buffer overflow, integer division truncation) using 3-step chain prompting in Cursor AI.
+          </p>
+          <div class="project-tech-tags">
+            <span class="tag">C</span>
+            <span class="tag">Python</span>
+            <span class="tag">Cursor AI</span>
+            <span class="tag">Prompt Engineering</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/rpahir2503-star/bug-fixing-using-cursor-ai" target="_blank" rel="noopener" class="btn-card primary">
+              <span class="btn-icon">&#128279;</span> GitHub Repository
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 4: Messy Python Code Improvement -->
+        <article class="project-card" data-tags="python c ai tools refactoring unit testing clean code modular design" data-category="python ai">
+          <div class="card-top">
+            <span class="project-num">04</span>
+            <span class="project-badge">Refactoring &bull; AI Tools</span>
+          </div>
+          <h3 class="project-name">Messy Python Code Improvement</h3>
+          <p class="project-summary">
+            Practical case study refactoring and auditing program scripts using AI assistance, transforming unmodular code with cryptic variables into clean, documented, and test-verified Python implementations.
+          </p>
+          <div class="project-tech-tags">
+            <span class="tag">Python</span>
+            <span class="tag">C</span>
+            <span class="tag">AI Tools</span>
+            <span class="tag">Unit Testing</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/rpahir2503-star/messy-python-code-improvement" target="_blank" rel="noopener" class="btn-card primary">
+              <span class="btn-icon">&#128279;</span> GitHub Repository
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 5: Python Programs Collection -->
+        <article class="project-card" data-tags="python c algorithms data structures google colab coursework basics factorial fibonacci" data-category="python">
+          <div class="card-top">
+            <span class="project-num">05</span>
+            <span class="project-badge">Coursework &bull; Python</span>
+          </div>
+          <h3 class="project-name">Python Programs Collection</h3>
+          <p class="project-summary">
+            Foundational Python coursework converting traditional C algorithms into Python (Factorial calculation, Fibonacci series generator, and C-structure to Python-dictionary data mapping) developed in Google Colab.
+          </p>
+          <div class="project-tech-tags">
+            <span class="tag">Python</span>
+            <span class="tag">C</span>
+            <span class="tag">Google Colab</span>
+            <span class="tag">Algorithms</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/rohit25bcon1143-oss/python-basics-1143" target="_blank" rel="noopener" class="btn-card primary">
+              <span class="btn-icon">&#128279;</span> GitHub Repository
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 6: Personal Portfolio Website -->
+        <article class="project-card" data-tags="html css javascript portfolio ai chatbot groq vercel responsive web" data-category="web ai">
+          <div class="card-top">
+            <span class="project-num">06</span>
+            <span class="project-badge">Assessment &bull; Web &amp; AI</span>
+          </div>
+          <h3 class="project-name">Portfolio Website &amp; AI Assistant</h3>
+          <p class="project-summary">
+            Personal responsive portfolio website featuring dynamic search &amp; filter, dark/light theme toggle, Open-Meteo live weather updates, and secure Groq API AI chatbot integration.
+          </p>
+          <div class="project-tech-tags">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Groq API</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/rpahir2503-star/portfoio-website" target="_blank" rel="noopener" class="btn-card primary">
+              <span class="btn-icon">&#128279;</span> GitHub
+            </a>
+            <a href="https://portfoio-website-kappa.vercel.app" target="_blank" rel="noopener" class="btn-card live-btn">
+              <span class="btn-icon">&#128065;</span> Live Demo
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 7: ArriveAI -->
+        <article class="project-card" data-tags="next.js ai saas prototype notifications delivery arrive" data-category="ai web">
+          <div class="card-top">
+            <span class="project-num">07</span>
+            <span class="project-badge">SaaS Prototype</span>
+          </div>
+          <h3 class="project-name">ArriveAI</h3>
+          <p class="project-summary">
+            SaaS prototype that sends AI-powered notifications when a delivery is about to arrive.
+          </p>
+          <div class="project-tech-tags">
+            <span class="tag">Next.js</span>
+            <span class="tag">AI</span>
+          </div>
+        </article>
+
+        <!-- Project 8: Traffic Escape -->
+        <article class="project-card" data-tags="html5 canvas mobile puzzle game road car" data-category="web">
+          <div class="card-top">
+            <span class="project-num">08</span>
+            <span class="project-badge">Mobile Game</span>
+          </div>
+          <h3 class="project-name">Traffic Escape</h3>
+          <p class="project-summary">
+            Mobile puzzle game where you clear the road to free your car.
+          </p>
+          <div class="project-tech-tags">
+            <span class="tag">HTML5</span>
+            <span class="tag">Canvas</span>
+          </div>
+        </article>
+      </div>
+
+      <div id="noProjectsNotice" class="no-results-msg" style="display: none;">
+        <p>&#128269; No projects match your search query. Try searching for "Quiz", "Book", "Python", or "AI".</p>
+      </div>
+    </section>
+
+    <!-- Contact Information Section -->
+    <section id="contact" class="section-block">
+      <div class="section-header">
+        <span class="section-sub">Communication</span>
+        <h2 class="section-title">Contact Information</h2>
+        <p class="section-desc">Feel free to reach out regarding coursework, projects, or programming discussions.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-card info-card">
+          <h3>Direct Details</h3>
+          <div class="contact-item">
+            <span class="item-icon">&#9993;</span>
+            <div class="item-text">
+              <span class="item-label">Email</span>
+              <a href="mailto:rpahir2503@2006" class="item-link">rpahir2503@2006</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="item-icon">&#128187;</span>
+            <div class="item-text">
+              <span class="item-label">GitHub</span>
+              <a href="https://github.com/rpahir2503-star" target="_blank" rel="noopener" class="item-link">github.com/rpahir2503-star</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="item-icon">&#127979;</span>
+            <div class="item-text">
+              <span class="item-label">Institution</span>
+              <span class="item-val">JECRC University &bull; Jaipur, Rajasthan</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-card form-card">
+          <h3>Send a Message</h3>
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="contact-name">Your Name</label>
+              <input type="text" id="contact-name" name="name" required placeholder="Your Name">
+            </div>
+            <div class="form-group">
+              <label for="contact-email">Your Email</label>
+              <input type="email" id="contact-email" name="email" required placeholder="name@example.com">
+            </div>
+            <div class="form-group">
+              <label for="contact-message">Message</label>
+              <textarea id="contact-message" name="message" rows="4" required placeholder="Write your message here..."></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit">Send Message</button>
+            <p id="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- AI / API Chatbot Section -->
+    <section id="chat" class="section-block ai-chat-section">
+      <div class="section-header">
+        <span class="section-sub">API Integration</span>
+        <h2 class="section-title">Ask My AI Assistant</h2>
+        <p class="section-desc">
+          An API-based chatbot integrated using Groq and serverless endpoints. Ask questions about my portfolio, educational background, skills, or projects.
+        </p>
+      </div>
+
+      <div class="chat-wrapper">
+        <div class="chat-header-bar">
+          <div class="chat-header-info">
+            <span class="bot-status-indicator"></span>
+            <div>
+              <strong>Portfolio Assistant (Groq API)</strong>
+              <small>Grounded in Rohit Ahir's Portfolio Information</small>
+            </div>
+          </div>
+          <button id="clearChatBtn" type="button" class="btn-clear-chat" title="Clear conversation">Clear Chat</button>
+        </div>
+
+        <!-- Clickable Suggested Question Chips -->
+        <div class="chat-suggestions" id="chatSuggestions">
+          <span class="sugg-label">Try asking:</span>
+          <button type="button" class="sugg-chip">Who are you?</button>
+          <button type="button" class="sugg-chip">Where do you study?</button>
+          <button type="button" class="sugg-chip">What are your skills?</button>
+          <button type="button" class="sugg-chip">What projects have you completed?</button>
+          <button type="button" class="sugg-chip">Tell me about the Interactive Quiz Application.</button>
+          <button type="button" class="sugg-chip">What is the Book Reading List Application?</button>
+          <button type="button" class="sugg-chip">What was fixed in the Bug Fixing Using Cursor AI project?</button>
+          <button type="button" class="sugg-chip">Where can I find your GitHub?</button>
+        </div>
+
+        <div id="chatMessages" class="chat-messages-container" aria-live="polite">
+          <div class="chat-message chat-assistant">
+            Hello! I am Rohit's AI portfolio assistant. You can ask me questions about his educational background at JECRC University, his skills, or his projects!
+          </div>
+        </div>
+
+        <div class="chat-input-row">
+          <input type="text" id="userInput" placeholder="Ask a question about Rohit's projects or skills..." autocomplete="off">
+          <button id="sendButton" type="button" class="btn btn-primary">
+            <span>Send</span>
+          </button>
+        </div>
+        <p id="chatStatus" class="chat-status" role="status" aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>&copy; <span id="year"></span> <strong>Rohit Ahir</strong> &bull; B.Tech CSE (Core), JECRC University.</p>
+      <p class="footer-sub">Internal Assessment Project &bull; Personal Portfolio Website with API-Based Chatbot Integration</p>
+    </div>
+  </footer>
+
+  <script src="chatbot.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
