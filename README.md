@@ -9,7 +9,7 @@ An individual practical **Internal Assessment** project developed for the Comput
 - **Expected Graduation**: 2029
 - **Email**: [rpahir2503@2006](mailto:rpahir2503@2006)
 - **GitHub Profile**: [https://github.com/rpahir2503-star](https://github.com/rpahir2503-star)
-- **Live Deployed Portfolio (Vercel)**: [https://personal-portfolio-iota-six-33.vercel.app](https://personal-portfolio-iota-six-33.vercel.app)
+- **Live Deployed Portfolio (Vercel)**: [(https://portfolio-psi-lac-27.vercel.app/)]
 
 ---
 
